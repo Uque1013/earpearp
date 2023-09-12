@@ -24,6 +24,7 @@
         top: 0;
         left: 0;
         height: 64px;
+        z-index: 1000;
     }
 
     div {
@@ -65,7 +66,7 @@
     }
 
     .user a {
-        color: #fff;
+        color: white;
         font-size: 18px;
         text-decoration: none;
     }
@@ -83,11 +84,12 @@
         display: flex; /* 가로로 정렬 */
         flex-wrap: nowrap;
         list-style: none; /* 목록 기호 제거 */
+        margin-bottom: 3%;
     }
     
     #gnb a {
         text-decoration: none; /* 링크에 밑줄 제거 (선택사항) */
-        color: #000; /* 링크 텍스트 색상 설정 (선택사항) */
+        color: black; /* 링크 텍스트 색상 설정 (선택사항) */
         display: block;
         padding: 0 10px;
         text-decoration: none;
@@ -108,7 +110,24 @@
         border-bottom: 1px solid black;
         border: 1px solid black; /* 검정색 테두리 추가 */
         background-color: white; /* 하얀색 배경 추가 */
-    }    
+    }
+
+    /* phone_prdList */
+    .phone_prdList {
+        display: flex;
+        margin-top: -4px;
+    }
+
+    /* footer */
+    #footer {
+        margin-top: 15px;
+        background-image: url(imgs/Bottom.png);
+        height: 150px;
+    }
+    .bottom {
+        margin-left: 3%;
+        padding-top: 3%;
+    }
 </style>
 <body>
     <div id="wrap">
@@ -136,8 +155,37 @@
                     </ul>
                 </div>
 
+                <!-- phone case -->
+                <section id="phone_case">
+                    <div class="phone_prd">
+                        <ul class="phone_prdList">
+                            <li><img src="imgs/phone_case/Purple Heart.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Chichi Case.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Bubble.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Black Case.png" width="384"></li>
+                        </ul>
+                        <ul class="phone_prdList">
+                            <li><img src="imgs/phone_case/Cherry.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Clover.png" width="384"></li>
+                            <li><img src="imgs/phone_case//Watermelon.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Rabbit.png" width="384"></li>
+                        </ul>
+                        <ul class="phone_prdList">
+                            <li><img src="imgs/phone_case/BlackPink.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Black.png" width="384"></li>
+                            <li><img src="imgs/phone_case//Blue.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Melon.png" width="384"></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
+
+        <footer id="footer">
+            <div class="bottom">
+                <h2><a href="index.html"><img src="imgs/logo_bottom.png" width="350" height="65"></a></h2>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
