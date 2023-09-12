@@ -84,6 +84,7 @@
         display: flex; /* 가로로 정렬 */
         flex-wrap: nowrap;
         list-style: none; /* 목록 기호 제거 */
+        margin-bottom: 3%;
     }
     
     #gnb a {
@@ -109,6 +110,23 @@
         border-bottom: 1px solid black;
         border: 1px solid black; /* 검정색 테두리 추가 */
         background-color: white; /* 하얀색 배경 추가 */
+    }
+
+    /* smart tok */
+    .smart_tok_prdList {
+        display: flex;
+        margin-top: -4px;
+    }
+
+    /* footer */
+    #footer {
+        margin-top: 15px;
+        background-image: url(imgs/Bottom.png);
+        height: 150px;
+    }
+    .bottom {
+        margin-left: 3%;
+        padding-top: 3%;
     }
 </style>
 <body>
@@ -137,8 +155,37 @@
                     </ul>
                 </div>
 
+                <!-- smart_tok -->
+                <section id="smart_tok">
+                    <div class="smart_tok_prd">
+                        <ul class="smart_tok_prdList">
+                            <li><img src="imgs/smart_tok/Smart tok.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Rabbit.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/CD.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Watermelon.png" width="384"></li>
+                        </ul>
+                        <ul class="smart_tok_prdList">
+                            <li><img src="imgs/smart_tok/Hug.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Rabbit Chichi.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Hoodie.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Rider.png" width="384"></li>
+                        </ul>
+                        <ul class="smart_tok_prdList">
+                            <li><img src="imgs/smart_tok/Siamese.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Alien.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Doom Chit.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Madness.png" width="384"></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
+
+        <footer id="footer">
+            <div class="bottom">
+                <h2><a href="index.html"><img src="imgs/logo_bottom.png" width="350" height="65"></a></h2>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
