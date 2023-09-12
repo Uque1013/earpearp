@@ -24,6 +24,7 @@
         top: 0;
         left: 0;
         height: 64px;
+        z-index: 1000;
     }
 
     div {
@@ -65,7 +66,7 @@
     }
 
     .user a {
-        color: #fff;
+        color: white;
         font-size: 18px;
         text-decoration: none;
     }
@@ -114,8 +115,13 @@
     #banner {
         position: relative;
         object-fit: cover;
-        top: 0;
-        bottom: 0;
+        margin-bottom: -10px;
+    }
+
+    /* best_prdList */
+    .best_prdList {
+        display: flex;
+        margin-top: -4px;
     }
     
 </style>
@@ -146,13 +152,28 @@
                 </div>
 
                 <!-- 배너 -->
-                <div id="banner">
+                <section id="banner">
                     <li><img src="imgs/Banner.png" width="1536" height="540"></li>
-                </div>
-                <div>
-                    <li><img src="imgs/Best.png" width="1536"></li>
-                </div>
+                </section>
 
+                <!-- best -->
+                <section id="best">
+                    <div class="best_title"><img src="imgs/Best.png" width="1536"></div>
+                    <div class="best_prd">
+                        <ul class="best_prdList">
+                            <li><img src="imgs/phone_case/Clover.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Cherry.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Purple Heart.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Black Case.png" width="384"></li>
+                        </ul>
+                        <ul class="best_prdList">
+                            <li><img src="imgs/phone_case/Chichi Case.png" width="384"></li>
+                            <li><img src="imgs/phone_case/Watermelon.png" width="384"></li>
+                            <li><img src="imgs/smart_tok/Smart tok.png" width="384"></li>
+                            <li><img src="imgs/key_ring/Key Ring.png" width="384"></li>
+                        </ul>
+                    </div>
+                </section>
 
             </div>
         </div>
