@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>earpearp</title>
+</head>
+<style>
+    html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header .logo img {
+        width: 100%;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    header {
+        background-image: url('imgs/TapBar.png');
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 64px;
+    }
+
+    div {
+        display: block;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    #contents {
+        position: relative;
+        width: 100%;
+        margin: 60px auto 0 auto;
+    }
+
+    #gnb {
+        display: flex; /* 가로로 정렬 */
+        flex-wrap: nowrap;
+        list-style: none; /* 목록 기호 제거 */
+    }
+
+    #gnb li {
+        
+    }
+    
+    #header .rigth > li > a {
+        position: relative;
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        width: 7%;
+    }
+
+    .user {
+        position: absolute;
+        top: 15px;
+        right: 15%;
+    }
+
+    .user li {
+        display: inline-block; /* User 항목을 가로로 배열 */
+        margin-left: 30px; /* 각 User 항목 사이의 간격 (선택사항) */
+    }
+
+    .user a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="imgs/logo.png"></a>
+                </h1>
+            </div>
+            <ul class="user">
+                <li><a href="user/cart.html">CART</a></li>
+                <li><a href="user/login.html">LOGIN</a></li>
+            </ul>
+        </header>
+        
+        <div id="container">
+            <div id="contents">
+                <div id="category">
+                    <ul id="gnb">
+                        <li>
+                            <a href="product/list_phonecase.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                        <li>
+                            <a href="product/list_airpods.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                        <li>
+                            <a href="product/list_smarttok.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                        <li>
+                            <a href="product/list_keyring.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                        <li>
+                            <a href="product/list_ipad.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                        <li>
+                            <a href="product/list_pouch.html"><img src="imgs/category/PHONE CASE.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
