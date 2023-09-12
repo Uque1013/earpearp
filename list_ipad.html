@@ -84,6 +84,7 @@
         display: flex; /* 가로로 정렬 */
         flex-wrap: nowrap;
         list-style: none; /* 목록 기호 제거 */
+        margin-bottom: 3%;
     }
     
     #gnb a {
@@ -109,6 +110,23 @@
         border-bottom: 1px solid black;
         border: 1px solid black; /* 검정색 테두리 추가 */
         background-color: white; /* 하얀색 배경 추가 */
+    }
+
+    /* ipad/macbook */
+    .ipad_prdList {
+        display: flex;
+        margin-top: -4px;
+    }
+
+    /* footer */
+    #footer {
+        margin-top: 15px;
+        background-image: url(imgs/Bottom.png);
+        height: 150px;
+    }
+    .bottom {
+        margin-left: 3%;
+        padding-top: 3%;
     }
 </style>
 <body>
@@ -137,8 +155,37 @@
                     </ul>
                 </div>
 
+                <!-- ipad/macbook -->
+                <section id="ipad">
+                    <div class="ipad_prd">
+                        <ul class="ipad_prdList">
+                            <li><img src="imgs/ipad/Check Board.png" width="384"></li>
+                            <li><img src="imgs/ipad/Lucky Clover.png" width="384"></li>
+                            <li><img src="imgs/ipad/Good Thinks.png" width="384"></li>
+                            <li><img src="imgs/ipad/Dice.png" width="384"></li>
+                        </ul>
+                        <ul class="ipad_prdList">
+                            <li><img src="imgs/ipad/Pink Chichi.png" width="384"></li>
+                            <li><img src="imgs/ipad/Rockstar.png" width="384"></li>
+                            <li><img src="imgs/ipad/Freshman.png" width="384"></li>
+                            <li><img src="imgs/ipad/Ones Wish.png" width="384"></li>
+                        </ul>
+                        <ul class="ipad_prdList">
+                            <li><img src="imgs/ipad/Triple Chichi.png" width="384"></li>
+                            <li><img src="imgs/ipad/Chichi.png" width="384"></li>
+                            <li><img src="imgs/ipad/Lucky Charm.png" width="384"></li>
+                            <li><img src="imgs/ipad/Sunglasses.png" width="384"></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
+
+        <footer id="footer">
+            <div class="bottom">
+                <h2><a href="index.html"><img src="imgs/logo_bottom.png" width="350" height="65"></a></h2>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
