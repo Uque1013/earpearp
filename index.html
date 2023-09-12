@@ -7,13 +7,10 @@
     <title>earpearp</title>
 </head>
 <style>
-    html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, 
+    form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
         margin: 0;
         padding: 0;
-    }
-
-    #header .logo img {
-        width: 100%;
     }
 
     body {
@@ -36,50 +33,15 @@
     li {
         list-style: none;
     }
-
-    #contents {
-        position: relative;
-        width: 100%;
-        margin: 60px auto 0 auto;
-    }
-
-    #gnb {
-        display: flex; /* 가로로 정렬 */
-        flex-wrap: nowrap;
-        list-style: none; /* 목록 기호 제거 */
-    }
     
-    #gnb a {
-        text-decoration: none; /* 링크에 밑줄 제거 (선택사항) */
-        color: #000; /* 링크 텍스트 색상 설정 (선택사항) */
-    }
-
-    #gnb li {
-        position: relative;
-        text-align: center;
-        width: 16.666%;
-        height: 40px;
-        box-sizing: border-box;
-        list-style: none;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-        border: 1px solid black; /* 검정색 테두리 추가 */
-        background-color: white; /* 하얀색 배경 추가 */
-    }
-
-    #gnb > li > a {
-        display: block;
-        padding: 0 10px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 40px;
-        height: 40px;
-    }
-
+    /* Header (logo) */
     #header .rigth > li > a {
         position: relative;
         display: block;
+    }
+
+    #header .logo img {
+        width: 100%;
     }
 
     .logo {
@@ -89,6 +51,8 @@
         width: 7%;
     }
 
+
+    /* Header (user) */
     .user {
         position: absolute;
         top: 15px;
@@ -105,14 +69,59 @@
         font-size: 18px;
         text-decoration: none;
     }
+
+
+    #contents {
+        position: relative;
+        width: 100%;
+        margin: 60px auto 0 auto;
+    }
+
+
+    /* Category */
+    #gnb {
+        display: flex; /* 가로로 정렬 */
+        flex-wrap: nowrap;
+        list-style: none; /* 목록 기호 제거 */
+    }
+    
+    #gnb a {
+        text-decoration: none; /* 링크에 밑줄 제거 (선택사항) */
+        color: #000; /* 링크 텍스트 색상 설정 (선택사항) */
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        height: 40px;
+    }
+
+    #gnb li {
+        position: relative;
+        text-align: center;
+        width: 16.666%;
+        height: 40px;
+        box-sizing: border-box;
+        list-style: none;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border: 1px solid black; /* 검정색 테두리 추가 */
+        background-color: white; /* 하얀색 배경 추가 */
+    }
+
+    /* Banner */
+    #banner {
+        position: relative;
+        object-fit: cover;
+    }
+    
 </style>
 <body>
     <div id="wrap">
         <header id="header">
             <div class="logo">
-                <h1>
-                    <a href="index.html"><img src="imgs/logo.png"></a>
-                </h1>
+                <h1><a href="index.html"><img src="imgs/logo.png"></a></h1>
             </div>
             <ul class="user">
                 <li><a href="user/cart.html">CART</a></li>
@@ -122,27 +131,21 @@
         
         <div id="container">
             <div id="contents">
+                <!-- 카테고리 -->
                 <div id="category">
                     <ul id="gnb">
-                        <li>
-                            <a href="product/list_phonecase.html">PHONE CASE</a>
-                        </li>
-                        <li>
-                            <a href="product/list_airpods.html">AIRPODS/BUDS</a>
-                        </li>
-                        <li>
-                            <a href="product/list_smarttok.html">SMART TOK</a>
-                        </li>
-                        <li>
-                            <a href="product/list_keyring.html">KEY RING</a>
-                        </li>
-                        <li>
-                            <a href="product/list_ipad.html">IPAD/MACBOOK</a>
-                        </li>
-                        <li>
-                            <a href="product/list_pouch.html">POUCH/BAG</a>
-                        </li>
+                        <li><a href="product/list_phonecase.html">PHONE CASE</a></li>
+                        <li><a href="product/list_airpods.html">AIRPODS/BUDS</a></li>
+                        <li><a href="product/list_smarttok.html">SMART TOK</a></li>
+                        <li><a href="product/list_keyring.html">KEY RING</a></li>
+                        <li><a href="product/list_ipad.html">IPAD/MACBOOK</a></li>
+                        <li><a href="product/list_pouch.html">POUCH/BAG</a></li>
                     </ul>
+                </div>
+
+                <!-- 스마트배너 -->
+                <div id="banner">
+                    <li><img src="imgs/Banner.png" alt="Banner" width="1536" height="540"></li>
                 </div>
             </div>
         </div>
