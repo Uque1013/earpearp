@@ -84,6 +84,7 @@
         display: flex; /* 가로로 정렬 */
         flex-wrap: nowrap;
         list-style: none; /* 목록 기호 제거 */
+        margin-bottom: 3%;
     }
     
     #gnb a {
@@ -109,6 +110,23 @@
         border-bottom: 1px solid black;
         border: 1px solid black; /* 검정색 테두리 추가 */
         background-color: white; /* 하얀색 배경 추가 */
+    }
+
+    /* pouch/bag */
+    .pouch_prdList {
+        display: flex;
+        margin-top: -4px;
+    }
+
+    /* footer */
+    #footer {
+        margin-top: 15px;
+        background-image: url(imgs/Bottom.png);
+        height: 150px;
+    }
+    .bottom {
+        margin-left: 3%;
+        padding-top: 3%;
     }
 </style>
 <body>
@@ -137,8 +155,37 @@
                     </ul>
                 </div>
 
+                <!-- pouch/bag -->
+                <section id="pouch">
+                    <div class="pouch_prd">
+                        <ul class="pouch_prdList">
+                            <li><img src="imgs/pouch/Sunglasses Chichi.png" width="384"></li>
+                            <li><img src="imgs/pouch/Checker Board.png" width="384"></li>
+                            <li><img src="imgs/pouch/Clover.png" width="384"></li>
+                            <li><img src="imgs/pouch/Shopping.png" width="384"></li>
+                        </ul>
+                        <ul class="pouch_prdList">
+                            <li><img src="imgs/pouch/Haribo.png" width="384"></li>
+                            <li><img src="imgs/pouch/Pink Rabbit.png" width="384"></li>
+                            <li><img src="imgs/pouch/White Chichi.png" width="384"></li>
+                            <li><img src="imgs/pouch/Purple Cat.png" width="384"></li>
+                        </ul>
+                        <ul class="pouch_prdList">
+                            <li><img src="imgs/pouch/Milk.png" width="384"></li>
+                            <li><img src="imgs/pouch/Room Object.png" width="384"></li>
+                            <li><img src="imgs/pouch/Navy Chichi.png" width="384"></li>
+                            <li><img src="imgs/pouch/Purple Rabbit.png" width="384"></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
+
+        <footer id="footer">
+            <div class="bottom">
+                <h2><a href="index.html"><img src="imgs/logo_bottom.png" width="350" height="65"></a></h2>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
