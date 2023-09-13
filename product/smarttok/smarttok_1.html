@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>earpearp</title>
+</head>
+<style>
+    html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, 
+    form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    header {
+        background-image: url('../../imgs/TapBar.png');
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 64px;
+        z-index: 1000;
+    }
+
+    div {
+        display: block;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    /* Header (logo) */
+    #header .rigth > li > a {
+        position: relative;
+        display: block;
+    }
+
+    #header .logo img {
+        width: 100%;
+    }
+
+    .logo {
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        width: 7%;
+    }
+
+
+    /* Header (user) */
+    .user {
+        position: absolute;
+        top: 15px;
+        right: 15%;
+    }
+
+    .user li {
+        display: inline-block; /* User 항목을 가로로 배열 */
+        margin-left: 30px; /* 각 User 항목 사이의 간격 (선택사항) */
+    }
+
+    .user a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+
+    #contents {
+        position: relative;
+        width: 100%;
+        margin: 90px auto 0 auto;
+    }
+
+
+    #text {
+        margin-left: 3%;
+    }
+
+    #top {
+        display: flex;
+    }
+
+    
+    /* footer */
+    #footer {
+        margin-top: 15px;
+        background-image: url(../../imgs/Bottom.png);
+        height: 150px;
+    }
+    .bottom {
+        margin-left: 3%;
+        padding-top: 3%;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">
+                <h1><a href="../../index.html"><img src="../../imgs/logo.png"></a></h1>
+            </div>
+            <ul class="user">
+                <li><a href="../../user/cart.html">CART</a></li>
+                <li><a href="../../user/login.html">LOGIN</a></li>
+            </ul>
+        </header>
+        
+        <div id="container">
+            <div id="contents">
+                <ul id="top">
+                    <li><img src="../../imgs/smart_tok/Smart tok_1.png" width="800" height="800"></li>
+                    <li id="text"><img src="../../imgs/smart_tok/Smart tok_2.png" width="580" height="180"></li>
+                </ul>
+                <ul>
+                    <li><img src="../../imgs/smart_tok/Smart tok_3.png" width="800"></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="bottom">
+                <h2><a href="../../index.html"><img src="../../imgs/logo_bottom.png" width="350" height="65"></a></h2>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
